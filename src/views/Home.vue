@@ -12,12 +12,12 @@ import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    HelloWorld
   },
   methods: {
     clickMessage() {
       console.log("Clicked me!");
-    },
-  },
+    }
+  }
 };
 </script>
