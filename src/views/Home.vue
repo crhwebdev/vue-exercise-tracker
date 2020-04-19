@@ -1,23 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" @click="clickMessage" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-container>
+    <div class="home">
+      <img alt="Vue logo" src="../assets/logo.png" @click="clickMessage" />
+      <v-btn small to="/vuetify">Vuetify</v-btn>
+      <v-btn small to="/about">About</v-btn>
+    </div>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  },
   methods: {
     clickMessage() {
       console.log("Clicked me!");
-    }
-  }
+    },
+  },
 };
 </script>
